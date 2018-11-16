@@ -1,0 +1,37 @@
+*{margin: 0; padding: 0; box-sizing: border-box;}
+*::before, *::after {
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.cssCode-wrapper {
+  flex: 1;
+  height: 50%;
+}
+.cssCode-wrapper > #cssCode {
+  overflow: hidden;
+  height: 100%;
+}
+
+.preview-wrapper {
+  background: #E1E7D3;
+  flex: 1;
+  height: 50%;
+}
+
+.preview-wrapper > .preview {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.preview-wrapper > .preview > .wrapper {
+  width: 255px;
+  height: 510px;
+  position: relative;
+}
+
