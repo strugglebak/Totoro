@@ -343,10 +343,12 @@
     n += 1;
     content.innerHTML = cssCode.substring(0, n);
     styleTag.innerHTML = cssCode.substring(0, n);
+    // 使其自动往下滚动
+    content.scrollTop = content.scrollHeight;
     if (n >= cssCode.length) {
       window.clearInterval(id);
     }
-  }, 100);
+  }, 0);
 
 }.call();
 
