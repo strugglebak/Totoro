@@ -374,6 +374,9 @@
     $curButton.addClass('active').siblings('.active').removeClass('active');
 
     switch(speed) {
+      case 'veryslow':
+        duration = 100;
+        break;
       case 'normal':
         duration = 50;
         break;
@@ -386,10 +389,11 @@
     }
   });
 
+
   let content = document.querySelector('#cssCode');
   let styleTag = document.querySelector('#styleTag');
   let n = 0;
-  let id = setInterval(()=> {
+  let id = setTimeout(function go() {
     n += 1;
     content.innerHTML = cssCode.substring(0, n);
     styleTag.innerHTML = cssCode.substring(0, n);
@@ -397,6 +401,8 @@
     content.scrollTop = content.scrollHeight;
     if (n >= cssCode.length) {
       window.clearInterval(id);
+    } else {
+      id = setTimeout(go, duration)
     }
   }, duration);
 
