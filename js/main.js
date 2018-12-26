@@ -6,19 +6,22 @@
 
   .nose {
     position: absolute;
-    left: 50%;
-    margin-left: -15px;
     top: 106px;
+    left: 50%;
+
     width: 30px;
     height: 10px;
     background: #5F5852;
     border-radius: 30px/10px;
+
+    margin-left: -15px;
     z-index: 6;
   }
 
   .eye {
     position: absolute;
     top: 95px;
+
     width: 24px;
     height: 24px;
     background: #fff;
@@ -27,8 +30,9 @@
   }
   .eye::after {
     position: absolute;
-    left: 7px;
     top: 7px;
+    left: 7px;
+
     content: '';
     display: block;
     width: 9px;
@@ -45,75 +49,89 @@
 
   .head {
     position: absolute;
-    left: 50%;
-    margin-left: -63px;
     top: 59px;
+    left: 50%;
+
     width: 126px;
     height: 75px;
     background: #A4978E;
-    z-index: 1;
     border-radius: 100px/60px;
+
+    margin-left: -63px;
+    z-index: 1;
   }
   .bodyFiller {
     position: absolute;
     top: 107px;
     left: 50%;
-    margin-left: -65px;
+
     width: 130px;
     height: 56px;
     background: #A4978E;
+
+    margin-left: -65px;
     z-index: 2;
   }
   .belly {
     position: absolute;
     top: 157px;
     left: 50%;
-    margin-left: -100px;
+
     width: 200px;
     height: 214px;
     background: #EFDCCB;
     border-radius: 100px/107px;
+
+    margin-left: -100px;
     z-index: 6;
   }
   .bellyFiller {
+    position: absolute;
+    left: 50%;
+    top: 163px;
+
     width: 194px;
     height: 63px;
     background: #A4978E;
-    position: absolute;
-    left: 50%;
+
     margin-left: -97px;
-    top: 163px;
     z-index: 2;
   }
   .lowerLimb {
     position: absolute;
     top: 172px;
     left: 50%;
-    margin-left: -110px;
+
     width: 220px;
     height: 225px;
     background: #a4978e;
     border-radius: 110px;
+
+    margin-left: -110px;
     z-index: 1;
   }
   .prune > .pruneLowerLimb {
     position: absolute;
     top: 378px;
     left: 50%;
-    margin-left: -4px;
+
     width: 8px;
     height: 18px;
     background: #E1E7D3;
+
+    margin-left: -4px;
     z-index: 999;
     transform: rotate(45deg);
   }
   .prune > .pruneFeet {
     position: absolute;
     top: 381px;
+    left: 50%;
+
     width: 124px;
     height: 20px;
     background: #E1E7D3;
-    left: 50%;
+
     margin-left: -62px;
     z-index: 999;
   }
@@ -121,9 +139,11 @@
   .arm {
     position: absolute;
     top: 83px;
+
     width: 35px;
     height: 131px;
     background: #A4978E;
+
     z-index: 4;
   }
   .arm.left {
@@ -138,10 +158,12 @@
   .hand {
     position: absolute;
     top: 192px;
+
     width: 38px;
     height: 104px;
     background: #A4978E;
     border-radius: 40px/100px;
+
     z-index: 3;
   }
   .hand.left {
@@ -153,22 +175,28 @@
 
   .piebald {
     position: absolute;
+    top: 180px;
+    left: 50%;
+    margin-left: -15px;
+
     width: 30px;
     height: 14px;
-    border-radius: 100px/50px;
     background: #89775A;
+    border-radius: 100px/50px;
+
     z-index: 7;
   }
   .piebald::after {
     position: absolute;
     top: 4px;
     left: -7px;
+
     content: '';
     display: block;
     width: 44px;
     height: 30px;
-    border-radius: 100px/80px;
     background: #EFDCCB;
+    border-radius: 100px/80px;
   }
   .piebald.spots1 {
     top: 180px;
@@ -207,6 +235,7 @@
   .earRoot {
     position: absolute;
     top: 55px;
+
     width: 9px;
     height: 25px;
     background: #A4978E;
@@ -224,6 +253,7 @@
     position: absolute;
     top: -5px;
     left: 60px;
+
     border: 15px solid transparent;
     border-bottom: 41px solid #A4978E;
     transform: rotate(350deg);
@@ -232,6 +262,7 @@
     position: absolute;
     top: 39px;
     left: -15px;
+
     content: '';
     display: block;
     border: 15px solid transparent;
@@ -242,6 +273,7 @@
       position: absolute;
       top: -5px;
       right: 60px;
+
       border: 15px solid transparent;
       border-bottom: 41px solid #A4978E;
       transform: rotate(-350deg);
@@ -250,6 +282,7 @@
     position: absolute;
     top: 39px;
     right: -15px;
+
     content: '';
     display: block;
     border: 15px solid transparent;
@@ -259,6 +292,7 @@
   .totoro {
     position: absolute;
     top: 400px;
+
     width: 255px;
     height: 80px;
     }
@@ -266,6 +300,7 @@
         position: absolute;
         top: 0px;
         left: 70px;
+
         width: 18px;
         height: 66px;
         background: #A4978E;
@@ -278,6 +313,7 @@
     .to1::after {
         position: absolute;
         top: 20px;
+
         content: '';
         display: block;
         width: 33px;
@@ -292,6 +328,7 @@
         position: absolute;
         top: 0;
         left: 110px;
+
         width: 18px;
         height: 66px;
         background: #A4978E;
@@ -304,6 +341,7 @@
     .to2::after {
         position: absolute;
         top: 20px;
+
         content: '';
         display: block;
         width: 33px;
@@ -318,6 +356,7 @@
         position: absolute;
         top: 21px;
         left: 150px;
+
         width: 43px;
         height: 43px;
         border-radius: 12px;
@@ -328,6 +367,7 @@
         position: absolute;
         top: 13px;
         left: 11px;
+
         content: '';
         display: block;
         width: 22px;
