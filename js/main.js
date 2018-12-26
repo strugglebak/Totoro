@@ -365,9 +365,29 @@
      * */
   `;
 
+  let duration = 50;
+
+  $('.actions').on('click', 'button', (e)=> {
+    let $curButton = $(e.currentTarget);
+    let speed = $curButton.attr('data-speed');
+    // 先在点击的按钮上加上 active 类，然后把它兄弟节点的 active 类去掉
+    $curButton.addClass('active').siblings('.active').removeClass('active');
+
+    switch(speed) {
+      case 'normal':
+        duration = 50;
+        break;
+      case 'quick':
+        duration = 25;
+        break;
+      case 'superquick':
+        duration = 0;
+        break;
+    }
+  });
+
   let content = document.querySelector('#cssCode');
   let styleTag = document.querySelector('#styleTag');
-
   let n = 0;
   let id = setInterval(()=> {
     n += 1;
@@ -378,7 +398,8 @@
     if (n >= cssCode.length) {
       window.clearInterval(id);
     }
-  }, 50);
+  }, duration);
+
 
 }.call();
 
