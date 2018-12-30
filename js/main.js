@@ -48,7 +48,7 @@
     right: 74px;
   }
 
-  /* 然后画这个苯苯的龙猫的头 */
+  /* 然后画这个笨笨龙猫的头 */
   .head {
     width: 126px;
     height: 75px;
@@ -170,9 +170,6 @@
     background: #89775A;
     border-radius: 100px/50px;
     position: absolute;
-    top: 180px;
-    left: 50%;
-    margin-left: -15px;
     z-index: 7;
   }
   .piebald::after {
